@@ -1,0 +1,148 @@
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+header {
+	display: flex;
+	flex-direction: row;
+	width:100%;
+	margin: 0vh;
+	justify-content: center;
+	position: fixed;
+	padding: 1rem;
+	height: 5rem;
+}
+
+header * {
+	text-align: center;
+	margin: 2vh;
+}
+
+a:hover {
+	font-size: 1.25rem;
+}
+a.highlight:hover {
+	font-size: 2.25rem;
+}
+
+#main_body {
+	width: 94%;
+	margin-left: 3%;
+	margin-right: 3%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+#bumper {
+	min-height: 5rem;
+	width: 90vw;
+}
+
+.article {
+	margin: 5vw;
+	padding: 1vw;
+}
+
+.article > h2 {
+	margin: 0px;
+}
+
+#funky_list > li {
+	margin-top: 3vh;
+}
+
+#funky_list, #silly_list {
+}
+
+#odd_list + li {
+}
+#odd_list ~ li {
+	box-shadow: 5px 5px 1px blue;
+}
+#video_grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+}
+#video_grid video{
+	width: 25vw;
+}
+
+.yellow {
+	box-shadow: 0px 0px 5px yellow;
+}
+
+.black {
+	box-shadow: 0px 0px 5px black;
+}
+
+
+#images {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: "img1 img2 img3"
+	"img4 img5 img5";
+}
+img {
+	width:26vw;
+	height:19.5vw;
+}
+
+.img1 {
+	grid-area: img1;
+	border: pink dotted 5px;
+	padding: 4px;
+	margin: 5px;
+
+}
+
+.img2 {
+	border: orange dashed 10px;
+	padding: 2px;
+	margin: 7px;
+	grid-area: img2;
+}
+
+.img3 {
+	grid-area: img3;
+}
+
+.img4 {
+	grid-area: img4;
+}
+
+.img5 {
+	grid-area: img5;
+	border: blue solid 1px;
+	padding: 2px;
+	margin: 1px;
+}
+
+table {
+	width: 50vw;
+	height: 50vh;
+}
+
+.background {
+	background-color: black;
+	color: white;
+}
+
+.midground {
+	background-color: dimgray;
+	color: black;
+}
+
+.foreground {
+	background-color: darkgray;
+	color: black;
+}
+
+.highlight {
+	background-color: yellow;
+	color: black;
+}

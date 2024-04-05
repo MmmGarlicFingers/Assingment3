@@ -1,0 +1,40 @@
+:root {
+    --transitionTime: 0.1s;
+}
+
+* {
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#dropdown_colour_content {
+	display: none;
+	position: absolute;
+	flex-direction: column;
+}
+form {
+	display: flex;
+	flex-direction: column;
+}
+.background {
+	background-color: black;
+	color: white;
+	transition: background-color color var(--transitionTime) linear; 
+}
+
+.midground {
+	background-color: dimgray;
+	color: black;
+	transition: background-color var(--transitionTime) linear; 
+}
+
+.foreground {
+	background-color: darkgray;
+	color: black;
+	transition: background-color var(--transitionTime) linear; 
+}
+
+.highlight {
+	background-color: yellow;
+	color: black;
+	transition: background-color var(--transitionTime) linear; 
+}
